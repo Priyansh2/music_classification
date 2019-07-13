@@ -1,0 +1,775 @@
+WARNING:tensorflow:From /home/priyansh.agrawal/music_classification/bilm-tf/elmo/lib/python3.6/site-packages/tensorflow/python/util/tf_should_use.py:170: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+2019-05-19 17:22:59.705348: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2019-05-19 17:22:59.705374: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2019-05-19 17:22:59.705379: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2019-05-19 17:22:59.705384: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2019-05-19 17:22:59.705389: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2019-05-19 17:23:01.438194: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti
+major: 6 minor: 1 memoryClockRate (GHz) 1.582
+pciBusID 0000:02:00.0
+Total memory: 10.92GiB
+Free memory: 10.76GiB
+2019-05-19 17:23:01.568570: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x28502050 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2019-05-19 17:23:01.569242: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 1 with properties: 
+name: GeForce GTX 1080 Ti
+major: 6 minor: 1 memoryClockRate (GHz) 1.582
+pciBusID 0000:03:00.0
+Total memory: 10.92GiB
+Free memory: 10.76GiB
+2019-05-19 17:23:01.701297: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x28506820 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2019-05-19 17:23:01.702058: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 2 with properties: 
+name: GeForce GTX 1080 Ti
+major: 6 minor: 1 memoryClockRate (GHz) 1.582
+pciBusID 0000:82:00.0
+Total memory: 10.92GiB
+Free memory: 10.76GiB
+2019-05-19 17:23:01.703069: I tensorflow/core/common_runtime/gpu/gpu_device.cc:832] Peer access not supported between device ordinals 0 and 2
+2019-05-19 17:23:01.703109: I tensorflow/core/common_runtime/gpu/gpu_device.cc:832] Peer access not supported between device ordinals 1 and 2
+2019-05-19 17:23:01.703122: I tensorflow/core/common_runtime/gpu/gpu_device.cc:832] Peer access not supported between device ordinals 2 and 0
+2019-05-19 17:23:01.703134: I tensorflow/core/common_runtime/gpu/gpu_device.cc:832] Peer access not supported between device ordinals 2 and 1
+2019-05-19 17:23:01.703168: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0 1 2 
+2019-05-19 17:23:01.703176: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y Y N 
+2019-05-19 17:23:01.703181: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 1:   Y Y N 
+2019-05-19 17:23:01.703186: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 2:   N N Y 
+2019-05-19 17:23:01.703197: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0)
+2019-05-19 17:23:01.703204: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:03:00.0)
+2019-05-19 17:23:01.703210: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:2) -> (device: 2, name: GeForce GTX 1080 Ti, pci bus id: 0000:82:00.0)
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+2019-05-19 17:26:07.289024: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 34394 get requests, put_count=34391 evicted_count=1000 eviction_rate=0.0290774 and unsatisfied allocation rate=0.0320695
+2019-05-19 17:26:07.289470: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 100 to 110
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+WARNING:tensorflow:Error encountered when serializing lstm_output_embeddings.
+Type is unsupported, or the types of the items don't match field type in CollectionDef.
+'list' object has no attribute 'name'
+Found 1 shards at /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+Found 1 shards at /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+USING SKIP CONNECTIONS
+USING SKIP CONNECTIONS
+USING SKIP CONNECTIONS
+[['global_step:0', TensorShape([])],
+ ['lm/CNN/W_cnn_0:0',
+  TensorShape([Dimension(1), Dimension(1), Dimension(16), Dimension(32)])],
+ ['lm/CNN/W_cnn_1:0',
+  TensorShape([Dimension(1), Dimension(2), Dimension(16), Dimension(32)])],
+ ['lm/CNN/W_cnn_2:0',
+  TensorShape([Dimension(1), Dimension(3), Dimension(16), Dimension(64)])],
+ ['lm/CNN/W_cnn_3:0',
+  TensorShape([Dimension(1), Dimension(4), Dimension(16), Dimension(128)])],
+ ['lm/CNN/W_cnn_4:0',
+  TensorShape([Dimension(1), Dimension(5), Dimension(16), Dimension(256)])],
+ ['lm/CNN/W_cnn_5:0',
+  TensorShape([Dimension(1), Dimension(6), Dimension(16), Dimension(512)])],
+ ['lm/CNN/W_cnn_6:0',
+  TensorShape([Dimension(1), Dimension(7), Dimension(16), Dimension(1024)])],
+ ['lm/CNN/b_cnn_0:0', TensorShape([Dimension(32)])],
+ ['lm/CNN/b_cnn_1:0', TensorShape([Dimension(32)])],
+ ['lm/CNN/b_cnn_2:0', TensorShape([Dimension(64)])],
+ ['lm/CNN/b_cnn_3:0', TensorShape([Dimension(128)])],
+ ['lm/CNN/b_cnn_4:0', TensorShape([Dimension(256)])],
+ ['lm/CNN/b_cnn_5:0', TensorShape([Dimension(512)])],
+ ['lm/CNN/b_cnn_6:0', TensorShape([Dimension(1024)])],
+ ['lm/CNN_high_0/W_carry:0', TensorShape([Dimension(2048), Dimension(2048)])],
+ ['lm/CNN_high_0/W_transform:0',
+  TensorShape([Dimension(2048), Dimension(2048)])],
+ ['lm/CNN_high_0/b_carry:0', TensorShape([Dimension(2048)])],
+ ['lm/CNN_high_0/b_transform:0', TensorShape([Dimension(2048)])],
+ ['lm/CNN_high_1/W_carry:0', TensorShape([Dimension(2048), Dimension(2048)])],
+ ['lm/CNN_high_1/W_transform:0',
+  TensorShape([Dimension(2048), Dimension(2048)])],
+ ['lm/CNN_high_1/b_carry:0', TensorShape([Dimension(2048)])],
+ ['lm/CNN_high_1/b_transform:0', TensorShape([Dimension(2048)])],
+ ['lm/CNN_proj/W_proj:0', TensorShape([Dimension(2048), Dimension(512)])],
+ ['lm/CNN_proj/b_proj:0', TensorShape([Dimension(512)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_0/lstm_cell/bias:0',
+  TensorShape([Dimension(16384)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_0/lstm_cell/kernel:0',
+  TensorShape([Dimension(1024), Dimension(16384)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_0/lstm_cell/projection/kernel:0',
+  TensorShape([Dimension(4096), Dimension(512)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_1/lstm_cell/bias:0',
+  TensorShape([Dimension(16384)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_1/lstm_cell/kernel:0',
+  TensorShape([Dimension(1024), Dimension(16384)])],
+ ['lm/RNN_0/rnn/multi_rnn_cell/cell_1/lstm_cell/projection/kernel:0',
+  TensorShape([Dimension(4096), Dimension(512)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_0/lstm_cell/bias:0',
+  TensorShape([Dimension(16384)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_0/lstm_cell/kernel:0',
+  TensorShape([Dimension(1024), Dimension(16384)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_0/lstm_cell/projection/kernel:0',
+  TensorShape([Dimension(4096), Dimension(512)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_1/lstm_cell/bias:0',
+  TensorShape([Dimension(16384)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_1/lstm_cell/kernel:0',
+  TensorShape([Dimension(1024), Dimension(16384)])],
+ ['lm/RNN_1/rnn/multi_rnn_cell/cell_1/lstm_cell/projection/kernel:0',
+  TensorShape([Dimension(4096), Dimension(512)])],
+ ['lm/char_embed:0', TensorShape([Dimension(261), Dimension(16)])],
+ ['lm/softmax/W:0', TensorShape([Dimension(96472), Dimension(512)])],
+ ['lm/softmax/b:0', TensorShape([Dimension(96472)])],
+ ['train_perplexity:0', TensorShape([])]]
+Training for 10 epochs and 1270 batches
+Batch 100, train_perplexity=3094.9207
+Total time: 80.84892153739929
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+Batch 200, train_perplexity=2264.0083
+Total time: 159.58607506752014
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+Batch 300, train_perplexity=2064.6946
+Total time: 238.22365140914917
+Batch 400, train_perplexity=1717.1086
+Total time: 311.70856070518494
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+Batch 500, train_perplexity=1537.657
+Total time: 390.82900071144104
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+Batch 600, train_perplexity=1448.8761
+Total time: 470.6221797466278
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+Batch 700, train_perplexity=1248.6967
+Total time: 550.1657314300537
+Batch 800, train_perplexity=1109.9346
+Total time: 623.7298686504364
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+Batch 900, train_perplexity=1064.3256
+Total time: 702.9056444168091
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+Batch 1000, train_perplexity=925.41974
+Total time: 781.997056722641
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+Batch 1100, train_perplexity=857.9986
+Total time: 861.0907430648804
+Batch 1200, train_perplexity=821.2937
+Total time: 934.3032631874084
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xtrain.txt
+Loaded 59751 sentences.
+Finished loading
+2019-05-19 17:40:15.215226: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2019-05-19 17:40:15.215282: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2019-05-19 17:40:15.215289: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2019-05-19 17:40:15.215294: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2019-05-19 17:40:15.215298: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2019-05-19 17:40:17.055178: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti
+major: 6 minor: 1 memoryClockRate (GHz) 1.582
+pciBusID 0000:02:00.0
+Total memory: 10.92GiB
+Free memory: 10.76GiB
+2019-05-19 17:40:17.181042: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x537e1b0 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2019-05-19 17:40:17.181736: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 1 with properties: 
+name: GeForce GTX 1080 Ti
+major: 6 minor: 1 memoryClockRate (GHz) 1.582
+pciBusID 0000:03:00.0
+Total memory: 10.92GiB
+Free memory: 10.76GiB
+2019-05-19 17:40:17.314704: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x5380760 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2019-05-19 17:40:17.315413: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 2 with properties: 
+name: GeForce GTX 1080 Ti
+major: 6 minor: 1 memoryClockRate (GHz) 1.582
+pciBusID 0000:82:00.0
+Total memory: 10.92GiB
+Free memory: 10.76GiB
+2019-05-19 17:40:17.316431: I tensorflow/core/common_runtime/gpu/gpu_device.cc:832] Peer access not supported between device ordinals 0 and 2
+2019-05-19 17:40:17.316463: I tensorflow/core/common_runtime/gpu/gpu_device.cc:832] Peer access not supported between device ordinals 1 and 2
+2019-05-19 17:40:17.316473: I tensorflow/core/common_runtime/gpu/gpu_device.cc:832] Peer access not supported between device ordinals 2 and 0
+2019-05-19 17:40:17.316483: I tensorflow/core/common_runtime/gpu/gpu_device.cc:832] Peer access not supported between device ordinals 2 and 1
+2019-05-19 17:40:17.316516: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0 1 2 
+2019-05-19 17:40:17.316523: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y Y N 
+2019-05-19 17:40:17.316527: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 1:   Y Y N 
+2019-05-19 17:40:17.316531: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 2:   N N Y 
+2019-05-19 17:40:17.316560: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0)
+2019-05-19 17:40:17.316567: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:03:00.0)
+2019-05-19 17:40:17.316572: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:2) -> (device: 2, name: GeForce GTX 1080 Ti, pci bus id: 0000:82:00.0)
+INFO:tensorflow:Restoring parameters from /scratch/priyansh.agrawal/elmo_models/model.ckpt-1270
+Found 1 shards at /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xval.txt
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xval.txt
+Loaded 6639 sentences.
+Finished loading
+Found 1 shards at /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xval.txt
+Loading data from: /home/priyansh.agrawal/music_classification/elmo_scripts/elmo_data_cm/xval.txt
+Loaded 6639 sentences.
+Finished loading
+USING SKIP CONNECTIONS
+batch=1, batch_perplexity=239373.48, avg_perplexity=239373.49087838095, time=0.06298995018005371
+batch=2, batch_perplexity=92599.14, avg_perplexity=148881.764840709, time=0.11395812034606934
+batch=3, batch_perplexity=198377.39, avg_perplexity=163829.35891158276, time=0.1646289825439453
+batch=4, batch_perplexity=463861.97, avg_perplexity=212515.685366033, time=0.21454453468322754
+batch=5, batch_perplexity=512042.06, avg_perplexity=253380.92533226372, time=0.2637195587158203
+batch=6, batch_perplexity=857192.6, avg_perplexity=310449.7664321191, time=0.31292080879211426
+batch=7, batch_perplexity=1169012.8, avg_perplexity=375191.04808124714, time=0.36271095275878906
+batch=8, batch_perplexity=383764.47, avg_perplexity=376252.16195168794, time=0.4118623733520508
+batch=9, batch_perplexity=419902.88, avg_perplexity=380869.023856932, time=0.46103596687316895
+batch=10, batch_perplexity=279751.9, avg_perplexity=369296.6697969675, time=0.5098872184753418
+batch=11, batch_perplexity=172301.17, avg_perplexity=344569.2819901857, time=0.5583291053771973
+batch=12, batch_perplexity=129065.83, avg_perplexity=317495.6534816163, time=0.607905387878418
+batch=13, batch_perplexity=73647.51, avg_perplexity=283742.21712357865, time=0.6572456359863281
+batch=14, batch_perplexity=83824.38, avg_perplexity=260075.0559490687, time=0.7060096263885498
+batch=15, batch_perplexity=70990.305, avg_perplexity=238509.33932796918, time=0.75486159324646
+batch=16, batch_perplexity=91823.34, avg_perplexity=224696.274475833, time=0.8038954734802246
+batch=17, batch_perplexity=73990.0, avg_perplexity=210483.49972003588, time=0.8537740707397461
+batch=18, batch_perplexity=80370.47, avg_perplexity=199521.2154730928, time=0.9027385711669922
+batch=19, batch_perplexity=49360.12, avg_perplexity=185379.66330891967, time=0.9514946937561035
+batch=20, batch_perplexity=64730.617, avg_perplexity=175879.19606565978, time=1.0006723403930664
+batch=21, batch_perplexity=42883.26, avg_perplexity=164447.58057192096, time=1.0495681762695312
+batch=22, batch_perplexity=49941.676, avg_perplexity=155776.46178931792, time=1.096843957901001
+batch=23, batch_perplexity=55024.668, avg_perplexity=148885.38858167338, time=1.146308183670044
+batch=24, batch_perplexity=52846.656, avg_perplexity=142596.5348021277, time=1.1954429149627686
+batch=25, batch_perplexity=61365.137, avg_perplexity=137867.36707117397, time=1.2440168857574463
+batch=26, batch_perplexity=68897.96, avg_perplexity=134237.77521654352, time=1.293121099472046
+batch=27, batch_perplexity=41444.703, avg_perplexity=128520.03362888219, time=1.3417332172393799
+batch=28, batch_perplexity=50678.34, avg_perplexity=124318.8422564191, time=1.390221118927002
+batch=29, batch_perplexity=74844.96, avg_perplexity=122162.47996095594, time=1.4400124549865723
+batch=30, batch_perplexity=70183.516, avg_perplexity=119926.29510220059, time=1.4892680644989014
+batch=31, batch_perplexity=49524.16, avg_perplexity=116553.19478841516, time=1.5385394096374512
+batch=32, batch_perplexity=67457.51, avg_perplexity=114578.33266249888, time=1.5877208709716797
+batch=33, batch_perplexity=48683.46, avg_perplexity=111644.72896259204, time=1.6365230083465576
+batch=34, batch_perplexity=60504.516, avg_perplexity=109651.15498037661, time=1.6856272220611572
+batch=35, batch_perplexity=56630.312, avg_perplexity=107600.48581620764, time=1.7344520092010498
+batch=36, batch_perplexity=58207.38, avg_perplexity=105779.64763395877, time=1.783769130706787
+batch=37, batch_perplexity=62550.516, avg_perplexity=104288.23717730159, time=1.8327627182006836
+batch=38, batch_perplexity=44180.98, avg_perplexity=101957.58447673586, time=1.882143497467041
+batch=39, batch_perplexity=46208.504, avg_perplexity=99909.49825297594, time=1.9310832023620605
+batch=40, batch_perplexity=45780.832, avg_perplexity=97979.15750329997, time=1.979844093322754
+batch=41, batch_perplexity=58239.363, avg_perplexity=96743.88595942082, time=2.02905011177063
+batch=42, batch_perplexity=60545.727, avg_perplexity=95670.34425850351, time=2.0783097743988037
+batch=43, batch_perplexity=48500.414, avg_perplexity=94170.77185192716, time=2.127089023590088
+batch=44, batch_perplexity=40100.0, avg_perplexity=92361.18555230532, time=2.1760401725769043
+batch=45, batch_perplexity=37774.684, avg_perplexity=90544.24706203655, time=2.2255921363830566
+batch=46, batch_perplexity=45689.324, avg_perplexity=89207.90441376367, time=2.2745933532714844
+batch=47, batch_perplexity=47784.2, avg_perplexity=88030.84032240298, time=2.3237619400024414
+batch=48, batch_perplexity=50726.402, avg_perplexity=87025.66111506124, time=2.373241424560547
+batch=49, batch_perplexity=56789.48, avg_perplexity=86270.85003749709, time=2.4221882820129395
+batch=50, batch_perplexity=51628.52, avg_perplexity=85389.52335555604, time=2.4710116386413574
+batch=51, batch_perplexity=47894.746, avg_perplexity=84426.87838252215, time=2.5202689170837402
+batch=52, batch_perplexity=48204.65, avg_perplexity=83521.85286857834, time=2.5695040225982666
+batch=53, batch_perplexity=41857.566, avg_perplexity=82440.24040606453, time=2.6188466548919678
+batch=54, batch_perplexity=50989.816, avg_perplexity=81710.00804934197, time=2.6719932556152344
+batch=55, batch_perplexity=54403.74, avg_perplexity=81107.96378944496, time=2.721709728240967
+batch=56, batch_perplexity=47912.105, avg_perplexity=80349.10245266311, time=2.773796319961548
+batch=57, batch_perplexity=37808.344, avg_perplexity=79293.44495922551, time=2.8226020336151123
+batch=58, batch_perplexity=62157.215, avg_perplexity=78961.26259116088, time=2.874833345413208
+batch=59, batch_perplexity=52558.31, avg_perplexity=78418.39273669037, time=2.9240362644195557
+batch=60, batch_perplexity=54901.438, avg_perplexity=77953.81359747778, time=2.9744508266448975
+batch=61, batch_perplexity=54832.418, avg_perplexity=77505.48690896823, time=3.0235400199890137
+batch=62, batch_perplexity=49704.766, avg_perplexity=76952.1226101639, time=3.073662281036377
+batch=63, batch_perplexity=61817.066, avg_perplexity=76685.08192639463, time=3.1226959228515625
+batch=64, batch_perplexity=54369.402, avg_perplexity=76274.11781874823, time=3.173837661743164
+batch=65, batch_perplexity=48501.434, avg_perplexity=75744.69649838543, time=3.2229599952697754
+batch=66, batch_perplexity=62290.375, avg_perplexity=75520.59314513854, time=3.2733802795410156
+batch=67, batch_perplexity=40041.76, avg_perplexity=74808.79724817004, time=3.3225042819976807
+batch=68, batch_perplexity=55168.535, avg_perplexity=74474.50997303097, time=3.373538017272949
+batch=69, batch_perplexity=53070.65, avg_perplexity=74109.69027693108, time=3.422222375869751
+batch=70, batch_perplexity=45191.797, avg_perplexity=73587.86566237363, time=3.4724314212799072
+batch=71, batch_perplexity=60477.344, avg_perplexity=73384.78338227507, time=3.521657705307007
+batch=72, batch_perplexity=65285.855, avg_perplexity=73265.68978452492, time=3.57068133354187
+batch=73, batch_perplexity=60917.098, avg_perplexity=73080.67343355651, time=3.6201608180999756
+batch=74, batch_perplexity=46995.707, avg_perplexity=72645.9488933128, time=3.669063091278076
+batch=75, batch_perplexity=37481.684, avg_perplexity=72007.79349392247, time=3.7179651260375977
+batch=76, batch_perplexity=56069.6, avg_perplexity=71771.144382895, time=3.766984224319458
+batch=77, batch_perplexity=51148.734, avg_perplexity=71456.09636674047, time=3.8159375190734863
+batch=78, batch_perplexity=48963.668, avg_perplexity=71110.64261236569, time=3.865154981613159
+batch=79, batch_perplexity=62180.336, avg_perplexity=70989.94871579601, time=3.9140725135803223
+batch=80, batch_perplexity=47770.395, avg_perplexity=70639.29998531143, time=3.9628701210021973
+batch=81, batch_perplexity=46972.453, avg_perplexity=70284.35984887322, time=4.011542797088623
+batch=82, batch_perplexity=49792.16, avg_perplexity=69989.53553249729, time=4.061094045639038
+batch=83, batch_perplexity=37517.625, avg_perplexity=69465.7113697483, time=4.110429048538208
+batch=84, batch_perplexity=56118.816, avg_perplexity=69289.49061709171, time=4.1602723598480225
+batch=85, batch_perplexity=49716.145, avg_perplexity=69019.41149275046, time=4.209314823150635
+batch=86, batch_perplexity=58684.387, avg_perplexity=68889.34905789368, time=4.258413791656494
+batch=87, batch_perplexity=48328.242, avg_perplexity=68609.22731804878, time=4.307231426239014
+batch=88, batch_perplexity=63755.51, avg_perplexity=68552.04711167485, time=4.356523752212524
+batch=89, batch_perplexity=51915.58, avg_perplexity=68338.27201386578, time=4.405477285385132
+batch=90, batch_perplexity=43533.45, avg_perplexity=67996.72301489931, time=4.454280614852905
+batch=91, batch_perplexity=44537.18, avg_perplexity=67681.28327856735, time=4.503200054168701
+batch=92, batch_perplexity=62806.71, avg_perplexity=67626.31624235869, time=4.552148818969727
+batch=93, batch_perplexity=53679.484, avg_perplexity=67458.57407858725, time=4.601893424987793
+batch=94, batch_perplexity=51921.273, avg_perplexity=67270.96682049583, time=4.651007413864136
+batch=95, batch_perplexity=43161.934, avg_perplexity=66957.45938805901, time=4.699937582015991
+batch=96, batch_perplexity=51634.92, avg_perplexity=66776.45951610923, time=4.749002933502197
+batch=97, batch_perplexity=57592.59, avg_perplexity=66674.68124908119, time=4.798036813735962
+batch=98, batch_perplexity=45864.473, avg_perplexity=66420.62269051686, time=4.847080230712891
+batch=99, batch_perplexity=57102.562, avg_perplexity=66319.28546015918, time=4.896167039871216
+batch=100, batch_perplexity=43431.273, avg_perplexity=66039.14861433308, time=4.945141553878784
+batch=101, batch_perplexity=53996.43, avg_perplexity=65907.63964328507, time=4.9938225746154785
+batch=102, batch_perplexity=47311.48, avg_perplexity=65693.78661443783, time=5.042834758758545
+batch=103, batch_perplexity=48148.78, avg_perplexity=65495.914140309054, time=5.091515064239502
+batch=104, batch_perplexity=58084.72, avg_perplexity=65420.33195626602, time=5.140650272369385
+batch=105, batch_perplexity=49505.605, avg_perplexity=65246.888608668094, time=5.189856052398682
+batch=106, batch_perplexity=41798.01, avg_perplexity=64973.34689738316, time=5.238858699798584
+batch=107, batch_perplexity=47337.16, avg_perplexity=64781.333436787565, time=5.287586212158203
+batch=108, batch_perplexity=47154.95, avg_perplexity=64591.120999023165, time=5.336679697036743
+batch=109, batch_perplexity=46497.074, avg_perplexity=64396.6410106554, time=5.386268615722656
+batch=110, batch_perplexity=48309.027, avg_perplexity=64228.5846105618, time=5.435134649276733
+batch=111, batch_perplexity=44557.613, avg_perplexity=64017.3456795869, time=5.484081268310547
+batch=112, batch_perplexity=60721.168, avg_perplexity=63987.13791967297, time=5.533221960067749
+batch=113, batch_perplexity=48907.387, avg_perplexity=63835.1348799351, time=5.582343816757202
+batch=114, batch_perplexity=51748.996, avg_perplexity=63717.70869545776, time=5.631222248077393
+batch=115, batch_perplexity=58894.86, avg_perplexity=63674.113697523026, time=5.680219888687134
+batch=116, batch_perplexity=37689.832, avg_perplexity=63386.91913854546, time=5.730916976928711
+batch=117, batch_perplexity=45897.816, avg_perplexity=63212.25568321441, time=5.780130624771118
+batch=118, batch_perplexity=53136.688, avg_perplexity=63119.31066709495, time=5.8291826248168945
+batch=119, batch_perplexity=53263.016, avg_perplexity=63029.318729842904, time=5.878241539001465
+batch=120, batch_perplexity=45341.55, avg_perplexity=62856.55299842531, time=5.926940202713013
+batch=121, batch_perplexity=55379.914, avg_perplexity=62790.80195235381, time=5.97567892074585
+batch=122, batch_perplexity=62061.258, avg_perplexity=62784.78737146774, time=6.024855852127075
+batch=123, batch_perplexity=42758.63, avg_perplexity=62589.00981239678, time=6.0741658210754395
+batch=124, batch_perplexity=44834.082, avg_perplexity=62420.84086456208, time=6.123305559158325
+batch=125, batch_perplexity=44344.09, avg_perplexity=62250.33080304467, time=6.172722578048706
+batch=126, batch_perplexity=56397.914, avg_perplexity=62201.57150128885, time=6.221677303314209
+batch=127, batch_perplexity=44706.08, avg_perplexity=62040.02289712748, time=6.270292282104492
+batch=128, batch_perplexity=52351.605, avg_perplexity=61957.77891076094, time=6.319067001342773
+batch=129, batch_perplexity=44782.375, avg_perplexity=61802.05337953893, time=6.367744445800781
+batch=130, batch_perplexity=66516.26, avg_perplexity=61837.00987573289, time=6.416597604751587
+batch=131, batch_perplexity=42613.543, avg_perplexity=61661.50542354913, time=6.465501546859741
+batch=132, batch_perplexity=59752.3, avg_perplexity=61646.814841950865, time=6.51458477973938
+batch=133, batch_perplexity=65634.08, avg_perplexity=61675.87144598768, time=6.563646554946899
+batch=134, batch_perplexity=44938.53, avg_perplexity=61530.323976289306, time=6.612529754638672
+batch=135, batch_perplexity=56329.54, avg_perplexity=61490.08672397781, time=6.6615824699401855
+batch=136, batch_perplexity=58778.484, avg_perplexity=61469.69885879734, time=6.711178779602051
+batch=137, batch_perplexity=54575.12, avg_perplexity=61416.343779980736, time=6.760073184967041
+batch=138, batch_perplexity=48485.707, avg_perplexity=61311.221904596474, time=6.8088603019714355
+batch=139, batch_perplexity=38507.38, avg_perplexity=61106.40904283962, time=6.8580663204193115
+batch=140, batch_perplexity=36635.215, avg_perplexity=60883.51330720096, time=6.907426595687866
+batch=141, batch_perplexity=43893.848, avg_perplexity=60742.39786428566, time=6.957108974456787
+batch=142, batch_perplexity=44765.38, avg_perplexity=60611.98176119396, time=7.006611585617065
+batch=143, batch_perplexity=57208.527, avg_perplexity=60587.491994715245, time=7.055665016174316
+batch=144, batch_perplexity=54787.047, avg_perplexity=60545.165116118354, time=7.104493141174316
+batch=145, batch_perplexity=47566.05, avg_perplexity=60444.50577021745, time=7.153360843658447
+batch=146, batch_perplexity=66637.34, avg_perplexity=60484.90091799022, time=7.202640771865845
+batch=147, batch_perplexity=54907.04, avg_perplexity=60445.10416855455, time=7.251679420471191
+batch=148, batch_perplexity=42375.656, avg_perplexity=60300.225521776905, time=7.300938129425049
+batch=149, batch_perplexity=55944.508, avg_perplexity=60269.89057971267, time=7.350259065628052
+batch=150, batch_perplexity=58017.12, avg_perplexity=60254.5861931678, time=7.399958372116089
+batch=151, batch_perplexity=41773.86, avg_perplexity=60108.59295211858, time=7.448781728744507
+batch=152, batch_perplexity=56228.746, avg_perplexity=60082.21237241278, time=7.4979095458984375
+batch=153, batch_perplexity=48984.5, avg_perplexity=60002.073812660194, time=7.546921253204346
+batch=154, batch_perplexity=56230.246, avg_perplexity=59976.783079803194, time=7.595953702926636
+batch=155, batch_perplexity=43192.156, avg_perplexity=59849.88336815985, time=7.644520282745361
+batch=156, batch_perplexity=57735.74, avg_perplexity=59836.087591270225, time=7.693457841873169
+batch=157, batch_perplexity=38586.086, avg_perplexity=59669.116391979995, time=7.742864370346069
+batch=158, batch_perplexity=38848.65, avg_perplexity=59507.26995669037, time=7.79167366027832
+batch=159, batch_perplexity=40257.023, avg_perplexity=59361.183681139, time=7.840667486190796
+batch=160, batch_perplexity=45967.86, avg_perplexity=59266.393567567415, time=7.889861106872559
+batch=161, batch_perplexity=41733.324, avg_perplexity=59137.420810068805, time=7.938733339309692
+batch=162, batch_perplexity=51429.008, avg_perplexity=59086.45990962648, time=7.9875876903533936
+batch=163, batch_perplexity=50701.977, avg_perplexity=59031.01105639745, time=8.036449432373047
+batch=164, batch_perplexity=46895.914, avg_perplexity=58948.234101633694, time=8.085396766662598
+batch=165, batch_perplexity=59336.684, avg_perplexity=58950.580666641334, time=8.134158372879028
+batch=166, batch_perplexity=46522.668, avg_perplexity=58866.56151981002, time=8.183180332183838
+batch=167, batch_perplexity=56786.066, avg_perplexity=58853.87935846345, time=8.232355117797852
+batch=168, batch_perplexity=44708.594, avg_perplexity=58757.657740440845, time=8.28125810623169
+batch=169, batch_perplexity=48075.78, avg_perplexity=58687.93989538403, time=8.329906702041626
+batch=170, batch_perplexity=55788.83, avg_perplexity=58670.453283332536, time=8.379048109054565
+batch=171, batch_perplexity=65013.285, avg_perplexity=58705.68513335486, time=8.428905725479126
+batch=172, batch_perplexity=51844.63, avg_perplexity=58663.28040027706, time=8.477797269821167
+batch=173, batch_perplexity=44470.12, avg_perplexity=58569.42769526366, time=8.527265548706055
+batch=174, batch_perplexity=55823.367, avg_perplexity=58553.26601743469, time=8.576975107192993
+batch=175, batch_perplexity=53379.16, avg_perplexity=58522.31911290304, time=8.627272605895996
+batch=176, batch_perplexity=49592.93, avg_perplexity=58467.29413664524, time=8.677257299423218
+batch=177, batch_perplexity=45273.324, avg_perplexity=58382.87501621467, time=8.726303577423096
+batch=178, batch_perplexity=60704.84, avg_perplexity=58395.668432556304, time=8.775394916534424
+batch=179, batch_perplexity=39498.08, avg_perplexity=58268.25396986875, time=8.824285507202148
+batch=180, batch_perplexity=44468.297, avg_perplexity=58180.82631971269, time=8.873268604278564
+batch=181, batch_perplexity=44783.656, avg_perplexity=58096.76194432906, time=8.922126770019531
+batch=182, batch_perplexity=33959.06, avg_perplexity=57925.611762824024, time=8.971708297729492
+batch=183, batch_perplexity=47132.11, avg_perplexity=57860.37770663709, time=9.020520210266113
+batch=184, batch_perplexity=41744.312, avg_perplexity=57757.8075505327, time=9.069967985153198
+batch=185, batch_perplexity=48891.438, avg_perplexity=57705.80016882095, time=9.118988037109375
+batch=186, batch_perplexity=54417.332, avg_perplexity=57687.5993568192, time=9.168169736862183
+batch=187, batch_perplexity=46139.06, avg_perplexity=57618.729316691984, time=9.217245101928711
+batch=188, batch_perplexity=47552.22, avg_perplexity=57559.90880023809, time=9.266370296478271
+batch=189, batch_perplexity=40644.37, avg_perplexity=57454.03332649655, time=9.31544041633606
+batch=190, batch_perplexity=45165.125, avg_perplexity=57381.30631269951, time=9.36432671546936
+batch=191, batch_perplexity=51968.383, avg_perplexity=57351.54693978021, time=9.413223266601562
+batch=192, batch_perplexity=44167.586, avg_perplexity=57273.575399153946, time=9.462260723114014
+batch=193, batch_perplexity=43151.934, avg_perplexity=57189.62225038484, time=9.51071834564209
+batch=194, batch_perplexity=53852.023, avg_perplexity=57171.89844113054, time=9.559784650802612
+batch=195, batch_perplexity=39669.387, avg_perplexity=57064.84319915746, time=9.609676122665405
+batch=196, batch_perplexity=39413.94, avg_perplexity=56957.20041462776, time=9.658945560455322
+batch=197, batch_perplexity=41285.293, avg_perplexity=56864.23841350187, time=9.70803427696228
+batch=198, batch_perplexity=56413.406, avg_perplexity=56861.95245640733, time=9.756823778152466
+batch=199, batch_perplexity=41207.88, avg_perplexity=56770.0199317691, time=9.805630922317505
+batch=200, batch_perplexity=43570.375, avg_perplexity=56694.954089771985, time=9.854408979415894
+batch=201, batch_perplexity=52040.0, avg_perplexity=56670.79405035643, time=9.90350604057312
+batch=202, batch_perplexity=38398.684, avg_perplexity=56561.69968937979, time=9.952838659286499
+batch=203, batch_perplexity=43159.547, avg_perplexity=56486.40063551823, time=10.001894235610962
+batch=204, batch_perplexity=41038.535, avg_perplexity=56398.00540662748, time=10.050869941711426
+batch=205, batch_perplexity=44523.59, avg_perplexity=56333.00234479346, time=10.099789381027222
+batch=206, batch_perplexity=44688.773, avg_perplexity=56269.71572650694, time=10.14853048324585
+batch=207, batch_perplexity=49899.305, avg_perplexity=56237.06447014238, time=10.197778224945068
+batch=208, batch_perplexity=54709.098, avg_perplexity=56229.61732175284, time=10.247351884841919
+batch=209, batch_perplexity=37668.99, avg_perplexity=56121.940908207136, time=10.296475410461426
+batch=210, batch_perplexity=48079.17, avg_perplexity=56080.61890964488, time=10.34584093093872
+batch=211, batch_perplexity=42323.312, avg_perplexity=56005.86302226403, time=10.395289897918701
+batch=212, batch_perplexity=46915.24, avg_perplexity=55959.09286847374, time=10.444433689117432
+batch=213, batch_perplexity=43033.617, avg_perplexity=55890.13510909494, time=10.493288040161133
+batch=214, batch_perplexity=45658.92, avg_perplexity=55837.35461497929, time=10.542610168457031
+batch=215, batch_perplexity=47080.715, avg_perplexity=55793.071190110146, time=10.591588973999023
+batch=216, batch_perplexity=42411.72, avg_perplexity=55722.28347477587, time=10.640398263931274
+batch=217, batch_perplexity=49362.477, avg_perplexity=55691.17252396173, time=10.68938159942627
+batch=218, batch_perplexity=39367.285, avg_perplexity=55602.62593383348, time=10.73841905593872
+batch=219, batch_perplexity=39777.05, avg_perplexity=55517.65183546498, time=10.787449359893799
+batch=220, batch_perplexity=58807.754, avg_perplexity=55532.18236822391, time=10.836393356323242
+batch=221, batch_perplexity=32565.645, avg_perplexity=55398.23650024253, time=10.885427951812744
+batch=222, batch_perplexity=52113.8, avg_perplexity=55382.98712401749, time=10.93419599533081
+batch=223, batch_perplexity=45894.36, avg_perplexity=55336.33351700413, time=10.983356714248657
+batch=224, batch_perplexity=44187.68, avg_perplexity=55280.78208204072, time=11.032611846923828
+batch=225, batch_perplexity=35133.133, avg_perplexity=55169.52657079116, time=11.081356525421143
+batch=226, batch_perplexity=42866.008, avg_perplexity=55107.96353446657, time=11.130391359329224
+batch=227, batch_perplexity=46939.984, avg_perplexity=55069.03166050422, time=11.179221630096436
+batch=228, batch_perplexity=40891.367, avg_perplexity=54997.18244470079, time=11.228038549423218
+batch=229, batch_perplexity=53830.562, avg_perplexity=54992.03346395615, time=11.277465581893921
+batch=230, batch_perplexity=41404.29, avg_perplexity=54924.21900323959, time=11.327020645141602
+batch=231, batch_perplexity=52318.016, avg_perplexity=54912.66150416498, time=11.372326135635376
+batch=232, batch_perplexity=45044.51, avg_perplexity=54865.79443161563, time=11.421140670776367
+batch=233, batch_perplexity=42738.57, avg_perplexity=54807.00691494723, time=11.469918251037598
+batch=234, batch_perplexity=47516.18, avg_perplexity=54773.58301037651, time=11.519103765487671
+batch=235, batch_perplexity=47405.785, avg_perplexity=54739.921874448526, time=11.56924819946289
+batch=236, batch_perplexity=38626.254, avg_perplexity=54659.11005594962, time=11.618668794631958
+batch=237, batch_perplexity=53631.844, avg_perplexity=54654.7345323076, time=11.668769121170044
+batch=238, batch_perplexity=50610.625, avg_perplexity=54637.08383158892, time=11.717423915863037
+batch=239, batch_perplexity=44624.465, avg_perplexity=54590.82636261071, time=11.766426801681519
+batch=240, batch_perplexity=54269.215, avg_perplexity=54589.48237241758, time=11.815429449081421
+batch=241, batch_perplexity=41317.824, avg_perplexity=54526.4244301244, time=11.864382982254028
+batch=242, batch_perplexity=43141.688, avg_perplexity=54473.68196509497, time=11.913611650466919
+batch=243, batch_perplexity=33895.77, avg_perplexity=54367.43259455678, time=11.96270751953125
+batch=244, batch_perplexity=62407.156, avg_perplexity=54398.171057998195, time=12.011699199676514
+batch=245, batch_perplexity=49127.656, avg_perplexity=54375.54870347854, time=12.060657978057861
+batch=246, batch_perplexity=47875.61, avg_perplexity=54347.41588701036, time=12.109692335128784
+batch=247, batch_perplexity=43524.773, avg_perplexity=54298.576490672895, time=12.15846061706543
+batch=248, batch_perplexity=42225.426, avg_perplexity=54243.544879803776, time=12.20846962928772
+batch=249, batch_perplexity=49190.477, avg_perplexity=54222.247268262814, time=12.257566452026367
+batch=250, batch_perplexity=41997.676, avg_perplexity=54166.8654137972, time=12.306505918502808
+batch=251, batch_perplexity=36342.285, avg_perplexity=54080.80907604109, time=12.355101346969604
+batch=252, batch_perplexity=49042.65, avg_perplexity=54059.82697895946, time=12.403871059417725
+batch=253, batch_perplexity=36591.01, avg_perplexity=53976.496241374385, time=12.453518390655518
+batch=254, batch_perplexity=35105.734, avg_perplexity=53885.156932429774, time=12.503012418746948
+batch=255, batch_perplexity=46573.273, avg_perplexity=53854.35015645053, time=12.552391767501831
+batch=256, batch_perplexity=43404.234, avg_perplexity=53808.98727160793, time=12.601911783218384
+batch=257, batch_perplexity=36105.266, avg_perplexity=53725.51169811823, time=12.650755882263184
+batch=258, batch_perplexity=49200.426, avg_perplexity=53707.19281607342, time=12.700680017471313
+batch=259, batch_perplexity=42991.12, avg_perplexity=53661.0631545039, time=12.751009702682495
+batch=260, batch_perplexity=44434.13, avg_perplexity=53622.1359047281, time=12.800025463104248
+batch=261, batch_perplexity=42859.26, avg_perplexity=53576.12687020357, time=12.848996877670288
+batch=262, batch_perplexity=52535.81, avg_perplexity=53572.11728555916, time=12.898597717285156
+batch=263, batch_perplexity=48189.113, avg_perplexity=53550.551089709676, time=12.948006391525269
+batch=264, batch_perplexity=34982.48, avg_perplexity=53464.254460103264, time=12.996829271316528
+batch=265, batch_perplexity=41773.86, avg_perplexity=53414.49686417735, time=13.045761585235596
+batch=266, batch_perplexity=71098.234, avg_perplexity=53471.95441684122, time=13.095539569854736
+batch=267, batch_perplexity=49810.016, avg_perplexity=53457.7489451191, time=13.144729375839233
+batch=268, batch_perplexity=43172.76, avg_perplexity=53415.14298596508, time=13.195010900497437
+batch=269, batch_perplexity=51901.617, avg_perplexity=53409.43555402151, time=13.244010210037231
+batch=270, batch_perplexity=54601.516, avg_perplexity=53413.80228655972, time=13.293067932128906
+batch=271, batch_perplexity=43645.73, avg_perplexity=53374.01029600611, time=13.342130422592163
+batch=272, batch_perplexity=47824.547, avg_perplexity=53352.47177315817, time=13.3911874294281
+batch=273, batch_perplexity=55108.38, avg_perplexity=53358.80046504115, time=13.440180778503418
+batch=274, batch_perplexity=50205.47, avg_perplexity=53346.93919558738, time=13.489175081253052
+batch=275, batch_perplexity=49758.266, avg_perplexity=53333.43151848036, time=13.538370609283447
+batch=276, batch_perplexity=50393.99, avg_perplexity=53322.47775095512, time=13.587488412857056
+batch=277, batch_perplexity=39481.957, avg_perplexity=53264.66016930606, time=13.636708736419678
+batch=278, batch_perplexity=37672.297, avg_perplexity=53198.341361774175, time=13.685725450515747
+batch=279, batch_perplexity=60208.883, avg_perplexity=53221.95077616998, time=13.733901023864746
+batch=280, batch_perplexity=48444.758, avg_perplexity=53204.07751289634, time=13.782640933990479
+batch=281, batch_perplexity=41087.406, avg_perplexity=53155.168659382296, time=13.831341981887817
+batch=282, batch_perplexity=38894.875, avg_perplexity=53096.32477886346, time=13.880834102630615
+batch=283, batch_perplexity=37198.973, avg_perplexity=53029.60671752027, time=13.930662393569946
+batch=284, batch_perplexity=54903.06, avg_perplexity=53036.0899276101, time=13.981014251708984
+batch=285, batch_perplexity=55519.68, avg_perplexity=53044.607078485, time=14.029759168624878
+batch=286, batch_perplexity=45505.21, avg_perplexity=53016.18086726887, time=14.07892370223999
+batch=287, batch_perplexity=37019.83, avg_perplexity=52949.87943737494, time=14.128354549407959
+batch=288, batch_perplexity=45778.65, avg_perplexity=52923.13033358509, time=14.177666187286377
+batch=289, batch_perplexity=36642.273, avg_perplexity=52855.849438502286, time=14.226868152618408
+batch=290, batch_perplexity=44688.816, avg_perplexity=52825.26657398309, time=14.27599287033081
+batch=291, batch_perplexity=39921.54, avg_perplexity=52774.44922957393, time=14.325001001358032
+batch=292, batch_perplexity=41513.258, avg_perplexity=52731.08819863619, time=14.370917320251465
+batch=293, batch_perplexity=41422.613, avg_perplexity=52687.66535132222, time=14.41984510421753
+batch=294, batch_perplexity=35761.418, avg_perplexity=52618.26520883209, time=14.468787908554077
+batch=295, batch_perplexity=42730.785, avg_perplexity=52581.15233901292, time=14.517669200897217
+batch=296, batch_perplexity=42347.86, avg_perplexity=52542.71822935271, time=14.566226959228516
+batch=297, batch_perplexity=57792.258, avg_perplexity=52559.56791303733, time=14.615715980529785
+batch=298, batch_perplexity=45531.863, avg_perplexity=52534.25815444164, time=14.664862632751465
+batch=299, batch_perplexity=32648.484, avg_perplexity=52450.749964913884, time=14.714090585708618
+batch=300, batch_perplexity=48223.87, avg_perplexity=52436.06222380268, time=14.763288736343384
+batch=301, batch_perplexity=48308.105, avg_perplexity=52421.780092879686, time=14.812397956848145
+batch=302, batch_perplexity=49435.215, avg_perplexity=52411.5989041364, time=14.861448049545288
+batch=303, batch_perplexity=53912.97, avg_perplexity=52416.48450584383, time=14.910555839538574
+batch=304, batch_perplexity=40289.477, avg_perplexity=52371.134423970245, time=14.95995044708252
+batch=305, batch_perplexity=44325.44, avg_perplexity=52342.50181443904, time=15.008911609649658
+batch=306, batch_perplexity=45786.598, avg_perplexity=52319.61684389175, time=15.057747602462769
+batch=307, batch_perplexity=50689.844, avg_perplexity=52314.22397010027, time=15.106826543807983
+batch=308, batch_perplexity=42239.24, avg_perplexity=52277.90220704808, time=15.155899047851562
+batch=309, batch_perplexity=44813.777, avg_perplexity=52251.84450474459, time=15.205398321151733
+batch=310, batch_perplexity=50416.87, avg_perplexity=52245.81914591126, time=15.25524616241455
+batch=311, batch_perplexity=53463.324, avg_perplexity=52249.68917984094, time=15.30503535270691
+batch=312, batch_perplexity=37873.81, avg_perplexity=52195.83042209506, time=15.354228496551514
+batch=313, batch_perplexity=49610.715, avg_perplexity=52187.36041550247, time=15.403023481369019
+batch=314, batch_perplexity=47279.457, avg_perplexity=52170.94816586022, time=15.452171564102173
+batch=315, batch_perplexity=51627.49, avg_perplexity=52169.213871924374, time=15.501109600067139
+batch=316, batch_perplexity=41166.637, avg_perplexity=52130.123991913184, time=15.550301790237427
+batch=317, batch_perplexity=36873.39, avg_perplexity=52073.21437671491, time=15.599910259246826
+batch=318, batch_perplexity=44981.965, avg_perplexity=52049.24835571771, time=15.648917436599731
+batch=319, batch_perplexity=44853.33, avg_perplexity=52024.97645210386, time=15.69780969619751
+batch=320, batch_perplexity=40241.246, avg_perplexity=51983.238052565925, time=15.746817827224731
+batch=321, batch_perplexity=47113.234, avg_perplexity=51967.31072676078, time=15.796324729919434
+batch=322, batch_perplexity=43781.43, avg_perplexity=51939.65515088215, time=15.845382928848267
+batch=323, batch_perplexity=51972.3, avg_perplexity=51939.756184473015, time=15.894461631774902
+batch=324, batch_perplexity=30009.777, avg_perplexity=51851.89188186584, time=15.943820714950562
+batch=325, batch_perplexity=50351.906, avg_perplexity=51847.208680956326, time=15.99291181564331
+batch=326, batch_perplexity=32610.428, avg_perplexity=51773.518942047514, time=16.041955709457397
+batch=327, batch_perplexity=54803.04, avg_perplexity=51782.52338542952, time=16.09089946746826
+batch=328, batch_perplexity=27370.506, avg_perplexity=51681.963077058186, time=16.140042066574097
+batch=329, batch_perplexity=38015.805, avg_perplexity=51633.7427783723, time=16.188831567764282
+batch=330, batch_perplexity=52779.668, avg_perplexity=51637.17742404425, time=16.23832368850708
+batch=331, batch_perplexity=53570.965, avg_perplexity=51642.91325849992, time=16.287455320358276
+batch=332, batch_perplexity=40434.746, avg_perplexity=51604.86964062813, time=16.33716583251953
+batch=333, batch_perplexity=33764.78, avg_perplexity=51539.17375381669, time=16.386050939559937
+batch=334, batch_perplexity=47117.816, avg_perplexity=51525.33549843525, time=16.43505358695984
+batch=335, batch_perplexity=40228.47, avg_perplexity=51487.2825300138, time=16.485065698623657
+batch=336, batch_perplexity=41875.85, avg_perplexity=51455.62981019233, time=16.533915281295776
+batch=337, batch_perplexity=41196.324, avg_perplexity=51421.687805837246, time=16.582897901535034
+batch=338, batch_perplexity=34978.207, avg_perplexity=51363.09824002948, time=16.632055044174194
+batch=339, batch_perplexity=37832.113, avg_perplexity=51316.79208441836, time=16.68159055709839
+batch=340, batch_perplexity=44073.92, avg_perplexity=51293.83299276683, time=16.731562852859497
+batch=341, batch_perplexity=36748.45, avg_perplexity=51243.69567863187, time=16.78081226348877
+batch=342, batch_perplexity=42408.32, avg_perplexity=51215.347477639254, time=16.830047130584717
+batch=343, batch_perplexity=42447.652, avg_perplexity=51187.318453349246, time=16.87969470024109
+batch=344, batch_perplexity=46298.535, avg_perplexity=51172.38382602255, time=16.929845809936523
+batch=345, batch_perplexity=41337.77, avg_perplexity=51140.73742566924, time=16.978711366653442
+batch=346, batch_perplexity=47966.28, avg_perplexity=51131.266459799204, time=17.02762222290039
+batch=347, batch_perplexity=38385.652, avg_perplexity=51089.03615296631, time=17.076600074768066
+batch=348, batch_perplexity=41231.938, avg_perplexity=51057.57663909743, time=17.125819444656372
+batch=349, batch_perplexity=28944.078, avg_perplexity=50974.607776230056, time=17.17146897315979
+batch=350, batch_perplexity=34693.83, avg_perplexity=50918.60060663964, time=17.22036838531494
+batch=351, batch_perplexity=39861.164, avg_perplexity=50883.09678728971, time=17.26938486099243
+batch=352, batch_perplexity=42448.176, avg_perplexity=50856.903532469194, time=17.318622827529907
+batch=353, batch_perplexity=43297.16, avg_perplexity=50833.72370608647, time=17.367517709732056
+batch=354, batch_perplexity=36699.03, avg_perplexity=50786.95959482012, time=17.415259838104248
+batch=355, batch_perplexity=42760.016, avg_perplexity=50762.35373736817, time=17.46470808982849
+batch=356, batch_perplexity=53882.18, avg_perplexity=50770.859254626426, time=17.514204025268555
+batch=357, batch_perplexity=35246.26, avg_perplexity=50718.9824388225, time=17.563202142715454
+batch=358, batch_perplexity=60542.84, avg_perplexity=50744.072007656665, time=17.612290859222412
+batch=359, batch_perplexity=39333.098, avg_perplexity=50708.07931571776, time=17.66157341003418
+batch=360, batch_perplexity=61080.91, avg_perplexity=50734.30134619907, time=17.711416721343994
+batch=361, batch_perplexity=32194.594, avg_perplexity=50670.42428185867, time=17.760555267333984
+batch=362, batch_perplexity=37842.688, avg_perplexity=50629.58181972363, time=17.8100802898407
+batch=363, batch_perplexity=37665.543, avg_perplexity=50588.34313338422, time=17.85926103591919
+batch=364, batch_perplexity=40617.863, avg_perplexity=50557.84461548952, time=17.908369779586792
+batch=365, batch_perplexity=37675.527, avg_perplexity=50517.122850061074, time=17.9571692943573
+batch=366, batch_perplexity=43098.67, avg_perplexity=50495.206467250726, time=18.00716209411621
+batch=367, batch_perplexity=40661.66, avg_perplexity=50465.41445167716, time=18.056196451187134
+batch=368, batch_perplexity=39194.29, avg_perplexity=50430.76467591046, time=18.10560393333435
+batch=369, batch_perplexity=53326.652, avg_perplexity=50438.396129756664, time=18.154839992523193
+batch=370, batch_perplexity=37668.27, avg_perplexity=50398.615306443324, time=18.204115390777588
+batch=371, batch_perplexity=39961.61, avg_perplexity=50367.10300668964, time=18.2531521320343
+batch=372, batch_perplexity=35421.01, avg_perplexity=50319.46188185001, time=18.302153825759888
+batch=373, batch_perplexity=45973.43, avg_perplexity=50307.277638229956, time=18.35292673110962
+batch=374, batch_perplexity=38304.504, avg_perplexity=50270.62556769742, time=18.402145385742188
+batch=375, batch_perplexity=47620.246, avg_perplexity=50263.3652789069, time=18.451440811157227
+batch=376, batch_perplexity=49351.46, avg_perplexity=50260.917789956846, time=18.50066590309143
+batch=377, batch_perplexity=43164.445, avg_perplexity=50240.62945168736, time=18.55061435699463
+batch=378, batch_perplexity=39236.062, avg_perplexity=50207.78072874814, time=18.600388288497925
+batch=379, batch_perplexity=46394.36, avg_perplexity=50197.31738371242, time=18.64953112602234
+batch=380, batch_perplexity=52647.855, avg_perplexity=50203.61409949779, time=18.699036598205566
+batch=381, batch_perplexity=34082.414, avg_perplexity=50152.60555185721, time=18.74795436859131
+batch=382, batch_perplexity=41945.72, avg_perplexity=50129.15037323674, time=18.79708743095398
+batch=383, batch_perplexity=50059.65, avg_perplexity=50128.96877955799, time=18.845963954925537
+batch=384, batch_perplexity=44165.35, avg_perplexity=50112.43697985519, time=18.89523983001709
+batch=385, batch_perplexity=43868.613, avg_perplexity=50095.119273345306, time=18.944801807403564
+batch=386, batch_perplexity=36898.016, avg_perplexity=50055.45266265338, time=18.994168043136597
+batch=387, batch_perplexity=41122.375, avg_perplexity=50030.03313634231, time=19.04316210746765
+batch=388, batch_perplexity=41113.98, avg_perplexity=50004.731145343205, time=19.09217929840088
+batch=389, batch_perplexity=39377.348, avg_perplexity=49974.027266830606, time=19.136505842208862
+batch=390, batch_perplexity=36245.23, avg_perplexity=49932.886676976894, time=19.18561339378357
+batch=391, batch_perplexity=51080.004, avg_perplexity=49935.78737157412, time=19.234784841537476
+batch=392, batch_perplexity=36462.473, avg_perplexity=49895.74596493004, time=19.283461809158325
+batch=393, batch_perplexity=48055.75, avg_perplexity=49890.97575439608, time=19.332700490951538
+batch=394, batch_perplexity=42149.105, avg_perplexity=49869.62765376261, time=19.382503747940063
+batch=395, batch_perplexity=35691.434, avg_perplexity=49827.41398330625, time=19.431474447250366
+batch=396, batch_perplexity=39806.195, avg_perplexity=49799.1684904401, time=19.480867862701416
+batch=397, batch_perplexity=31781.332, avg_perplexity=49742.863411513856, time=19.529947519302368
+batch=398, batch_perplexity=42638.016, avg_perplexity=49723.604803751055, time=19.579124927520752
+batch=399, batch_perplexity=36355.906, avg_perplexity=49684.59853895802, time=19.628023624420166
+batch=400, batch_perplexity=44391.773, avg_perplexity=49670.60922684576, time=19.67709970474243
+batch=401, batch_perplexity=32654.775, avg_perplexity=49618.683865714476, time=19.726162433624268
+batch=402, batch_perplexity=44750.016, avg_perplexity=49605.938230228596, time=19.775390148162842
+batch=403, batch_perplexity=41010.207, avg_perplexity=49582.520706948555, time=19.8246431350708
+batch=404, batch_perplexity=43628.586, avg_perplexity=49566.822987798376, time=19.873693227767944
+batch=405, batch_perplexity=31473.379, avg_perplexity=49511.268361277216, time=19.92176914215088
+batch=406, batch_perplexity=50540.156, avg_perplexity=49513.77666134916, time=19.971416473388672
+batch=407, batch_perplexity=49355.32, avg_perplexity=49513.38671039214, time=20.020581245422363
+batch=408, batch_perplexity=30950.875, avg_perplexity=49456.40124749132, time=20.071074962615967
+batch=409, batch_perplexity=60996.62, avg_perplexity=49481.767999725045, time=20.120270013809204
+batch=410, batch_perplexity=34297.383, avg_perplexity=49437.55164658035, time=20.16957139968872
+batch=411, batch_perplexity=41286.395, avg_perplexity=49415.88358723022, time=20.21866202354431
+batch=412, batch_perplexity=52898.137, avg_perplexity=49424.05182584018, time=20.268083095550537
+batch=413, batch_perplexity=33508.574, avg_perplexity=49377.565327974466, time=20.31733727455139
+batch=414, batch_perplexity=51218.734, avg_perplexity=49381.93187768037, time=20.36665940284729
+batch=415, batch_perplexity=39326.57, avg_perplexity=49354.846567376066, time=20.41554284095764
+batch=416, batch_perplexity=63898.434, avg_perplexity=49385.49629002619, time=20.465144395828247
+batch=417, batch_perplexity=49076.99, avg_perplexity=49384.754150128974, time=20.514682292938232
+batch=418, batch_perplexity=45683.75, avg_perplexity=49375.551588604736, time=20.56354522705078
+batch=419, batch_perplexity=38740.69, avg_perplexity=49346.97566985815, time=20.61276125907898
+batch=420, batch_perplexity=46270.594, avg_perplexity=49339.41325281125, time=20.661802768707275
+batch=421, batch_perplexity=51898.254, avg_perplexity=49345.33924959258, time=20.710954189300537
+batch=422, batch_perplexity=49524.633, avg_perplexity=49345.763351116344, time=20.75936770439148
+batch=423, batch_perplexity=38103.68, avg_perplexity=49315.6120330522, time=20.808677673339844
+batch=424, batch_perplexity=42387.54, avg_perplexity=49298.0073736301, time=20.857638835906982
+batch=425, batch_perplexity=37040.168, avg_perplexity=49264.85770138318, time=20.907505750656128
+FINSIHED!  AVERAGE PERPLEXITY = 49264.89
+2019-05-19 17:40:43.640735: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2019-05-19 17:40:43.640765: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2019-05-19 17:40:43.640772: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2019-05-19 17:40:43.640777: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2019-05-19 17:40:43.640782: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2019-05-19 17:40:45.354258: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti
+major: 6 minor: 1 memoryClockRate (GHz) 1.582
+pciBusID 0000:02:00.0
+Total memory: 10.92GiB
+Free memory: 10.76GiB
+2019-05-19 17:40:45.484992: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x21aca10 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2019-05-19 17:40:45.486005: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 1 with properties: 
+name: GeForce GTX 1080 Ti
+major: 6 minor: 1 memoryClockRate (GHz) 1.582
+pciBusID 0000:03:00.0
+Total memory: 10.92GiB
+Free memory: 10.76GiB
+2019-05-19 17:40:45.614293: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x21b11f0 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2019-05-19 17:40:45.614991: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 2 with properties: 
+name: GeForce GTX 1080 Ti
+major: 6 minor: 1 memoryClockRate (GHz) 1.582
+pciBusID 0000:82:00.0
+Total memory: 10.92GiB
+Free memory: 10.76GiB
+2019-05-19 17:40:45.616000: I tensorflow/core/common_runtime/gpu/gpu_device.cc:832] Peer access not supported between device ordinals 0 and 2
+2019-05-19 17:40:45.616033: I tensorflow/core/common_runtime/gpu/gpu_device.cc:832] Peer access not supported between device ordinals 1 and 2
+2019-05-19 17:40:45.616045: I tensorflow/core/common_runtime/gpu/gpu_device.cc:832] Peer access not supported between device ordinals 2 and 0
+2019-05-19 17:40:45.616055: I tensorflow/core/common_runtime/gpu/gpu_device.cc:832] Peer access not supported between device ordinals 2 and 1
+2019-05-19 17:40:45.616088: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0 1 2 
+2019-05-19 17:40:45.616095: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y Y N 
+2019-05-19 17:40:45.616099: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 1:   Y Y N 
+2019-05-19 17:40:45.616104: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 2:   N N Y 
+2019-05-19 17:40:45.616122: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:02:00.0)
+2019-05-19 17:40:45.616128: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:03:00.0)
+2019-05-19 17:40:45.616133: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:2) -> (device: 2, name: GeForce GTX 1080 Ti, pci bus id: 0000:82:00.0)
+INFO:tensorflow:Restoring parameters from /scratch/priyansh.agrawal/elmo_models/model.ckpt-1270
+USING SKIP CONNECTIONS
+Saving variable lm/char_embed:0 with name char_embed
+Saving variable lm/CNN/W_cnn_0:0 with name CNN/W_cnn_0
+Saving variable lm/CNN/b_cnn_0:0 with name CNN/b_cnn_0
+Saving variable lm/CNN/W_cnn_1:0 with name CNN/W_cnn_1
+Saving variable lm/CNN/b_cnn_1:0 with name CNN/b_cnn_1
+Saving variable lm/CNN/W_cnn_2:0 with name CNN/W_cnn_2
+Saving variable lm/CNN/b_cnn_2:0 with name CNN/b_cnn_2
+Saving variable lm/CNN/W_cnn_3:0 with name CNN/W_cnn_3
+Saving variable lm/CNN/b_cnn_3:0 with name CNN/b_cnn_3
+Saving variable lm/CNN/W_cnn_4:0 with name CNN/W_cnn_4
+Saving variable lm/CNN/b_cnn_4:0 with name CNN/b_cnn_4
+Saving variable lm/CNN/W_cnn_5:0 with name CNN/W_cnn_5
+Saving variable lm/CNN/b_cnn_5:0 with name CNN/b_cnn_5
+Saving variable lm/CNN/W_cnn_6:0 with name CNN/W_cnn_6
+Saving variable lm/CNN/b_cnn_6:0 with name CNN/b_cnn_6
+Saving variable lm/CNN_proj/W_proj:0 with name CNN_proj/W_proj
+Saving variable lm/CNN_proj/b_proj:0 with name CNN_proj/b_proj
+Saving variable lm/CNN_high_0/W_carry:0 with name CNN_high_0/W_carry
+Saving variable lm/CNN_high_0/b_carry:0 with name CNN_high_0/b_carry
+Saving variable lm/CNN_high_0/W_transform:0 with name CNN_high_0/W_transform
+Saving variable lm/CNN_high_0/b_transform:0 with name CNN_high_0/b_transform
+Saving variable lm/CNN_high_1/W_carry:0 with name CNN_high_1/W_carry
+Saving variable lm/CNN_high_1/b_carry:0 with name CNN_high_1/b_carry
+Saving variable lm/CNN_high_1/W_transform:0 with name CNN_high_1/W_transform
+Saving variable lm/CNN_high_1/b_transform:0 with name CNN_high_1/b_transform
+Saving variable lm/RNN_0/rnn/multi_rnn_cell/cell_0/lstm_cell/kernel:0 with name RNN_0/RNN/MultiRNNCell/Cell0/LSTMCell/W_0
+Saving variable lm/RNN_0/rnn/multi_rnn_cell/cell_0/lstm_cell/bias:0 with name RNN_0/RNN/MultiRNNCell/Cell0/LSTMCell/B
+Saving variable lm/RNN_0/rnn/multi_rnn_cell/cell_0/lstm_cell/projection/kernel:0 with name RNN_0/RNN/MultiRNNCell/Cell0/LSTMCell/W_P_0
+Saving variable lm/RNN_0/rnn/multi_rnn_cell/cell_1/lstm_cell/kernel:0 with name RNN_0/RNN/MultiRNNCell/Cell1/LSTMCell/W_0
+Saving variable lm/RNN_0/rnn/multi_rnn_cell/cell_1/lstm_cell/bias:0 with name RNN_0/RNN/MultiRNNCell/Cell1/LSTMCell/B
+Saving variable lm/RNN_0/rnn/multi_rnn_cell/cell_1/lstm_cell/projection/kernel:0 with name RNN_0/RNN/MultiRNNCell/Cell1/LSTMCell/W_P_0
+Saving variable lm/RNN_1/rnn/multi_rnn_cell/cell_0/lstm_cell/kernel:0 with name RNN_1/RNN/MultiRNNCell/Cell0/LSTMCell/W_0
+Saving variable lm/RNN_1/rnn/multi_rnn_cell/cell_0/lstm_cell/bias:0 with name RNN_1/RNN/MultiRNNCell/Cell0/LSTMCell/B
+Saving variable lm/RNN_1/rnn/multi_rnn_cell/cell_0/lstm_cell/projection/kernel:0 with name RNN_1/RNN/MultiRNNCell/Cell0/LSTMCell/W_P_0
+Saving variable lm/RNN_1/rnn/multi_rnn_cell/cell_1/lstm_cell/kernel:0 with name RNN_1/RNN/MultiRNNCell/Cell1/LSTMCell/W_0
+Saving variable lm/RNN_1/rnn/multi_rnn_cell/cell_1/lstm_cell/bias:0 with name RNN_1/RNN/MultiRNNCell/Cell1/LSTMCell/B
+Saving variable lm/RNN_1/rnn/multi_rnn_cell/cell_1/lstm_cell/projection/kernel:0 with name RNN_1/RNN/MultiRNNCell/Cell1/LSTMCell/W_P_0
+sending incremental file list
+created directory /share1/priyansh.agrawal/cm_twitter
+elmo_models/
+elmo_models/checkpoint
+            247 100%    0.00kB/s    0:00:00              247 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=9/11)
+elmo_models/events.out.tfevents.1558266793.gnode13
+         32,768   0%   31.25MB/s    0:00:01       44,178,792 100%   70.10MB/s    0:00:00 (xfr#2, to-chk=8/11)
+elmo_models/model.ckpt-1250.data-00000-of-00001
+         32,768   0%   53.16kB/s    5:58:54        7,307,264   0%    6.97MB/s    0:02:39       24,150,016   2%   11.52MB/s    0:01:34       35,061,760   3%   11.15MB/s    0:01:37       54,296,576   4%   12.94MB/s    0:01:22       62,128,128   5%   13.06MB/s    0:01:20       74,612,736   6%   12.03MB/s    0:01:26       92,635,136   8%   13.72MB/s    0:01:14      108,003,328   9%   12.81MB/s    0:01:19      123,305,984  10%   14.59MB/s    0:01:08      131,497,984  11%   13.56MB/s    0:01:12      142,508,032  12%   11.89MB/s    0:01:22      162,234,368  14%   12.92MB/s    0:01:14      186,155,008  16%   14.98MB/s    0:01:02      210,075,648  18%   18.73MB/s    0:00:48      219,938,816  19%   18.47MB/s    0:00:48      229,212,160  20%   15.97MB/s    0:00:55      237,993,984  20%   12.36MB/s    0:01:11      247,070,720  21%    8.82MB/s    0:01:39      256,147,456  22%    8.63MB/s    0:01:40      265,060,352  23%    8.54MB/s    0:01:40      274,235,392  23%    8.63MB/s    0:01:38      288,292,864  25%    9.82MB/s    0:01:25      298,614,784  26%   10.11MB/s    0:01:21      322,535,424  28%   13.70MB/s    0:00:58      346,456,064  30%   17.22MB/s    0:00:45      366,215,168  31%   18.58MB/s    0:00:40      377,028,608  32%   18.70MB/s    0:00:40      387,940,352  33%   15.60MB/s    0:00:47      399,015,936  34%   12.53MB/s    0:00:58      410,255,360  35%   10.50MB/s    0:01:08      421,658,624  36%   10.64MB/s    0:01:06      435,650,560  38%   11.38MB/s    0:01:00      445,710,336  38%   11.14MB/s    0:01:01      466,616,320  40%   13.44MB/s    0:00:49      488,439,808  42%   15.92MB/s    0:00:40      510,164,992  44%   17.77MB/s    0:00:34      521,207,808  45%   18.00MB/s    0:00:33      530,415,616  46%   15.21MB/s    0:00:39      539,361,280  47%   12.14MB/s    0:00:48      548,503,552  47%    9.14MB/s    0:01:03      558,071,808  48%    8.79MB/s    0:01:05      567,443,456  49%    8.83MB/s    0:01:03      577,044,480  50%    8.98MB/s    0:01:01      591,069,184  51%   10.14MB/s    0:00:53      602,472,448  52%   10.58MB/s    0:00:50      625,016,832  54%   13.73MB/s    0:00:36      647,593,984  56%   16.82MB/s    0:00:28      667,648,000  58%   18.26MB/s    0:00:25      679,215,104  59%   18.30MB/s    0:00:24      690,782,208  60%   15.68MB/s    0:00:28      702,251,008  61%   13.03MB/s    0:00:33      713,293,824  62%   10.87MB/s    0:00:38      724,500,480  63%   10.79MB/s    0:00:38      739,377,152  64%   11.58MB/s    0:00:34      748,486,656  65%   11.02MB/s    0:00:35      771,227,648  67%   13.81MB/s    0:00:26      794,558,464  69%   16.71MB/s    0:00:20      817,823,744  71%   18.71MB/s    0:00:17      841,154,560  73%   22.10MB/s    0:00:13      864,550,912  75%   22.26MB/s    0:00:12      888,111,104  77%   22.32MB/s    0:00:11      911,638,528  79%   22.38MB/s    0:00:10      934,936,576  81%   22.37MB/s    0:00:09      950,501,376  83%   20.50MB/s    0:00:09      958,726,144  83%   16.83MB/s    0:00:10      965,312,512  84%   12.78MB/s    0:00:13      971,177,984  84%    8.63MB/s    0:00:19      976,650,240  85%    6.22MB/s    0:00:26      981,827,584  85%    5.49MB/s    0:00:28      987,103,232  86%    5.18MB/s    0:00:29      992,444,416  86%    5.06MB/s    0:00:29      997,949,440  87%    5.07MB/s    0:00:28    1,003,880,448  87%    5.25MB/s    0:00:26    1,009,778,688  88%    5.41MB/s    0:00:24    1,015,676,928  88%    5.54MB/s    0:00:22    1,021,640,704  89%    5.64MB/s    0:00:21    1,028,554,752  89%    5.88MB/s    0:00:19    1,035,468,800  90%    6.12MB/s    0:00:17    1,042,415,616  91%    6.37MB/s    0:00:15    1,049,329,664  91%    6.59MB/s    0:00:14    1,056,112,640  92%    6.56MB/s    0:00:13    1,062,961,152  92%    6.54MB/s    0:00:12    1,069,809,664  93%    6.53MB/s    0:00:11    1,076,658,176  94%    6.51MB/s    0:00:10    1,083,506,688  94%    6.53MB/s    0:00:09    1,090,322,432  95%    6.51MB/s    0:00:08    1,097,170,944  95%    6.52MB/s    0:00:07    1,104,052,224  96%    6.52MB/s    0:00:06    1,110,900,736  97%    6.52MB/s    0:00:05    1,117,618,176  97%    6.50MB/s    0:00:04    1,124,401,152  98%    6.47MB/s    0:00:03    1,130,233,856  98%    6.22MB/s    0:00:02    1,136,197,632  99%    6.01MB/s    0:00:01    1,142,489,088  99%    5.92MB/s    0:00:00    1,144,727,880 100%   11.57MB/s    0:01:34 (xfr#3, to-chk=7/11)
+elmo_models/model.ckpt-1250.index
+          3,273 100%   10.08kB/s    0:00:00            3,273 100%   10.08kB/s    0:00:00 (xfr#4, to-chk=6/11)
+elmo_models/model.ckpt-1250.meta
+         32,768   0%  100.95kB/s    0:03:37       22,002,322 100%   36.12MB/s    0:00:00 (xfr#5, to-chk=5/11)
+elmo_models/model.ckpt-1270.data-00000-of-00001
+         32,768   0%   54.98kB/s    5:46:59        8,159,232   0%    7.78MB/s    0:02:22       24,313,856   2%   11.60MB/s    0:01:34       33,488,896   2%   10.65MB/s    0:01:41       52,559,872   4%   12.53MB/s    0:01:25       59,506,688   5%   12.24MB/s    0:01:26       67,338,240   5%   10.26MB/s    0:01:42       86,540,288   7%   12.64MB/s    0:01:21       98,369,536   8%   10.92MB/s    0:01:33      118,161,408  10%   13.98MB/s    0:01:11      126,451,712  11%   14.09MB/s    0:01:10      134,840,320  11%   11.52MB/s    0:01:25      146,964,480  12%   11.59MB/s    0:01:24      169,508,864  14%   12.25MB/s    0:01:17      192,086,016  16%   15.65MB/s    0:00:59      212,729,856  18%   18.57MB/s    0:00:49      221,577,216  19%   17.79MB/s    0:00:50      230,588,416  20%   14.56MB/s    0:01:01      239,042,560  20%   11.18MB/s    0:01:19      247,824,384  21%    8.36MB/s    0:01:44      256,671,744  22%    8.35MB/s    0:01:43      265,453,568  23%    8.30MB/s    0:01:43      274,497,536  23%    8.44MB/s    0:01:40      288,325,632  25%    9.63MB/s    0:01:26      298,156,032  26%    9.87MB/s    0:01:23      320,733,184  28%   13.16MB/s    0:01:01      343,277,568  29%   16.39MB/s    0:00:47      364,183,552  31%   18.09MB/s    0:00:42      374,931,456  32%   18.30MB/s    0:00:41      385,646,592  33%   15.47MB/s    0:00:47      396,263,424  34%   12.63MB/s    0:00:57      407,339,008  35%   10.29MB/s    0:01:10      418,381,824  36%   10.35MB/s    0:01:08      429,424,640  37%   10.43MB/s    0:01:06      443,056,128  38%   11.15MB/s    0:01:01      459,210,752  40%   12.36MB/s    0:00:54      481,067,008  42%   14.95MB/s    0:00:43      503,414,784  43%   17.64MB/s    0:00:35      518,520,832  45%   18.00MB/s    0:00:33      527,630,336  46%   16.31MB/s    0:00:36      536,641,536  46%   13.25MB/s    0:00:44      545,390,592  47%   10.01MB/s    0:00:58      554,729,472  48%    8.63MB/s    0:01:06      564,199,424  49%    8.71MB/s    0:01:05      573,636,608  50%    8.82MB/s    0:01:03      586,022,912  51%    9.68MB/s    0:00:56      596,443,136  52%    9.95MB/s    0:00:53      616,857,600  53%   12.55MB/s    0:00:41      639,369,216  55%   15.68MB/s    0:00:31      661,913,600  57%   18.10MB/s    0:00:26      674,955,264  58%   18.73MB/s    0:00:24      686,522,368  59%   16.62MB/s    0:00:26      698,122,240  60%   14.01MB/s    0:00:31      709,165,056  61%   11.27MB/s    0:00:37      720,273,408  62%   10.80MB/s    0:00:38      731,545,600  63%   10.73MB/s    0:00:37      745,340,928  65%   11.25MB/s    0:00:34      762,576,896  66%   12.73MB/s    0:00:29      785,776,640  68%   15.62MB/s    0:00:22      809,074,688  70%   18.49MB/s    0:00:17      832,372,736  72%   20.75MB/s    0:00:14      855,506,944  74%   22.16MB/s    0:00:12      878,706,688  76%   22.16MB/s    0:00:11      902,070,272  78%   22.18MB/s    0:00:10      925,433,856  80%   22.20MB/s    0:00:09      947,257,344  82%   21.89MB/s    0:00:08      955,547,648  83%   18.32MB/s    0:00:10      962,822,144  84%   14.48MB/s    0:00:12      968,884,224  84%   10.35MB/s    0:00:16      974,585,856  85%    6.50MB/s    0:00:25      979,927,040  85%    5.80MB/s    0:00:27      985,137,152  86%    5.31MB/s    0:00:29      990,445,568  86%    5.13MB/s    0:00:29      995,753,984  86%    5.04MB/s    0:00:28    1,001,553,920  87%    5.15MB/s    0:00:27    1,007,419,392  88%    5.30MB/s    0:00:25    1,013,284,864  88%    5.43MB/s    0:00:23    1,019,117,568  89%    5.56MB/s    0:00:22    1,025,638,400  89%    5.73MB/s    0:00:20    1,032,454,144  90%    5.95MB/s    0:00:18    1,039,269,888  90%    6.18MB/s    0:00:16    1,046,085,632  91%    6.41MB/s    0:00:15    1,052,934,144  91%    6.49MB/s    0:00:13    1,059,717,120  92%    6.49MB/s    0:00:12    1,066,532,864  93%    6.50MB/s    0:00:11    1,073,348,608  93%    6.50MB/s    0:00:10    1,080,164,352  94%    6.49MB/s    0:00:09    1,086,947,328  94%    6.48MB/s    0:00:08    1,093,763,072  95%    6.48MB/s    0:00:07    1,100,578,816  96%    6.48MB/s    0:00:06    1,107,361,792  96%    6.47MB/s    0:00:05    1,114,013,696  97%    6.44MB/s    0:00:04    1,120,796,672  97%    6.43MB/s    0:00:03    1,127,579,648  98%    6.42MB/s    0:00:02    1,134,329,856  99%    6.42MB/s    0:00:01    1,141,047,296  99%    6.44MB/s    0:00:00    1,144,727,880 100%   11.42MB/s    0:01:35 (xfr#6, to-chk=4/11)
+elmo_models/model.ckpt-1270.index
+          3,273 100%    6.23kB/s    0:00:00            3,273 100%    6.23kB/s    0:00:00 (xfr#7, to-chk=3/11)
+elmo_models/model.ckpt-1270.meta
+         32,768   0%   62.38kB/s    0:05:52       22,002,322 100%   27.57MB/s    0:00:00 (xfr#8, to-chk=2/11)
+elmo_models/options.json
+            541 100%    0.69kB/s    0:00:00              541 100%    0.69kB/s    0:00:00 (xfr#9, to-chk=1/11)
+elmo_models/weights.hdf5
+         32,768   0%   41.99kB/s    2:28:35        5,636,096   1%    5.38MB/s    0:01:07       28,934,144   7%   13.80MB/s    0:00:24       52,199,424  13%   16.59MB/s    0:00:18       75,399,168  20%   17.98MB/s    0:00:16       98,074,624  26%   22.04MB/s    0:00:12      120,750,080  32%   21.90MB/s    0:00:11      143,425,536  38%   21.76MB/s    0:00:10      166,166,528  44%   21.65MB/s    0:00:09      188,841,984  50%   21.65MB/s    0:00:08      211,517,440  56%   21.65MB/s    0:00:07      234,029,056  62%   21.61MB/s    0:00:06      256,704,512  68%   21.60MB/s    0:00:05      279,281,664  74%   21.58MB/s    0:00:04      301,858,816  80%   21.55MB/s    0:00:03      324,435,968  86%   21.57MB/s    0:00:02      347,111,424  92%   21.57MB/s    0:00:01      369,590,272  98%   21.54MB/s    0:00:00      374,434,776 100%   20.75MB/s    0:00:17 (xfr#10, to-chk=0/11)
+
+sent 1,851,428,151 bytes  received 268 bytes  8,922,546.60 bytes/sec
+total size is 2,752,081,306  speedup is 1.49
